@@ -36,6 +36,12 @@ body {
   font-weight: 400;
 }
 
+.heading-1 {
+  color: #f9f7f6;
+  line-height: 1;
+  font-size: 4.5rem;
+}
+
 .heading-2 {
   font-size: 4rem;
   font-style: italic;
@@ -128,6 +134,60 @@ body {
 .header {
   background-color: #54483A;
   grid-column: full-start / col-end 6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 29, 44, 0.93)), to(rgba(16, 29, 44, 0.93))), url(../img/hero.jpeg);
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 8rem;
+  padding-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr min-content 6rem 1fr;
+      grid-template-rows: 1fr -webkit-min-content 6rem 1fr;
+      grid-template-rows: 1fr min-content 6rem 1fr;
+  -ms-grid-columns: max-content;
+      grid-template-columns: -webkit-max-content;
+      grid-template-columns: max-content;
+  grid-row-gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__logo {
+  height: 3rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.header__btn {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.header__seenon-text {
+  display: -ms-grid;
+  display: grid;
+  font-size: 1.6rem;
+  color: .header__seenon-text colo-grey-light-2;
+}
+
+.header__seenon-logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 3rem;
+  justify-items: center;
+}
+
+.header__seenon-logo img {
+  height: 2.5rem;
+  -webkit-filter: brightness(79%);
+          filter: brightness(79%);
 }
 
 .realtors {
